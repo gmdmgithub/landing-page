@@ -10,7 +10,7 @@
 .container{
     position: relative;
     padding: 0 100px;
-    min-height: 100vh;
+    min-height: calc(91vh);
 }
 
 .container::before{
@@ -27,7 +27,7 @@
 .container::after{
     position: absolute;
     content: 'Smart IT solutions';
-    bottom: 0;
+    bottom: -78px;
     left: 0;
     font-size: 8vw;
     font-weight: 700;
@@ -224,9 +224,110 @@ header ul li a.active::before{
     display: none;        
 }
 
+.content_products{
+    /* position: absolute; */
+    /* top: 80px;
+    left:100px;
+    bottom: 100px; */
+    width: calc(100% - 300px);
+    height: 62vh;
+    margin-top: 0px;
+    background: #000 url('./../img/project_background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0 50px 50px rgba(0,0,0,0.5);
+}
+.content_products h2{
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: 1em;
+    line-height: 0.8em;
+    color: #464545;
+    margin-top: -120px;
+}
+
+.content_products h2 span{
+    display: block;
+    font-size: 3em;
+    font-weight: 2em;
+    line-height: 1.2em;
+    letter-spacing: 6px;
+    color: #333;
+    text-transform: uppercase;
+}
+.countdown{
+    display: flex;
+    margin-top: 50px;
+}
+.countdown div{
+    position: relative;
+    width: 100px;
+    height: 75px;
+    font-size: 1.5em;
+    text-align: center;
+    line-height: 60px;
+    background: #333;
+    color: #fff;
+    margin: 0 15px;
+    font-style: 3em;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.countdown div::before{
+    content:'';
+    position: absolute;
+    bottom: -30px;
+    left:0;
+    width: 100px;
+    height: 45px;
+    background: #3375de;
+    font-style: 0.35em;
+    line-height: 35px;
+    font-weight: 300;
+    
+}
+.countdown #day::before{
+    content: 'DAYS';
+    font-size: 0.6em;
+}
+
+.countdown #hour::before{
+    content: 'HOURS';
+    font-size: 0.6em;
+}
+
+.countdown #minute::before{
+    content: 'MINUTES';
+    font-size: 0.6em;
+}
+.countdown #second::before{
+    content: 'SECONDS';
+    font-size: 0.6em;
+}
+
 @media (max-width:920px){
     .container {
         padding: 20px 50px;
+    }
+
+    .content_products {
+        width: calc(100%)  !important;
+    }
+    .content_products h2{
+        font-size: 1.5em;
+        margin-top: -230px;
+    }
+    .countdown div{
+        height: 60px;
+        line-height: 50px;
+    }
+    .countdown div::before{
+        height: 40px;
     }
 
     .container::before {
@@ -318,6 +419,9 @@ header ul li a.active::before{
         background-repeat: no-repeat;
         background-position: 6px;
     }
+    .content_products{
+        width: calc(100% - 200px);
+    }
 }
 
 @media(max-width: 760px){
@@ -334,4 +438,3 @@ header ul li a.active::before{
 
    
 }
-
