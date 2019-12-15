@@ -104,7 +104,7 @@ header ul li a.active::before{
 }
 .content .bannerText{
     position: relative;
-    max-width: 70%;
+    max-width: 60%;
     margin-right: 50px;
 }
 
@@ -160,7 +160,7 @@ header ul li a.active::before{
     min-width: 500px;
     position: relative;
     /* width: 450px; */
-    height: 500px;
+    height: 350px;
     background: #000;
 }
 .content .bannerImg img{
@@ -266,7 +266,7 @@ header ul li a.active::before{
 .countdown div{
     position: relative;
     width: 100px;
-    height: 75px;
+    height: 65px;
     font-size: 1.5em;
     text-align: center;
     line-height: 60px;
@@ -284,7 +284,7 @@ header ul li a.active::before{
     bottom: -30px;
     left:0;
     width: 100px;
-    height: 45px;
+    height: 35px;
     background: #3375de;
     font-style: 0.35em;
     line-height: 35px;

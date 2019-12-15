@@ -55,9 +55,10 @@ if (project_tab){
         document.querySelector('#minute').innerHTML = m_dif;
         document.querySelector('#second').innerHTML = s_dif;
     }
-
+    elapsedTime()
+    
     setInterval(function(){
-        elapsedTime()
+        elapsedTime();
     },1000);
 
 }
