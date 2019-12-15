@@ -19,6 +19,12 @@ function nextSlide(forward_backward){
     slidesText[index].classList.add('active');
 }
 
+function menuToggle(){
+    const nav = document.querySelector('#navbar');
+    nav.classList.toggle('active')
+
+}
+
 
 
 

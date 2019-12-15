@@ -226,7 +226,7 @@ header ul li a.active::before{
 
 @media (max-width:920px){
     .container {
-        padding: 20 50px;
+        padding: 20px 50px;
     }
 
     .container::before {
@@ -273,7 +273,14 @@ header ul li a.active::before{
         z-index: 10000;
         padding: 100px 0;
         background: #fff;
+        transition:  0.5s ease-in-out;
     }
+
+    header.active ul{
+        display: initial;
+        /* transition:  0.5s ease-in-out; */
+    }
+
     header li{
         padding: 20px;
         text-align: center;
@@ -294,12 +301,24 @@ header ul li a.active::before{
         position: fixed; 
         right: 50px;
         cursor: pointer;
-        padding: 8px;
+        padding: 4px 8px 4px 4px;
         z-index: 1000000;
         background: #fff url('./../img/menu-of-three-lines.png');
-        width: 34px;
-        height: 34px;
+        width: 24px;
+        height: 24px;
         background-repeat: no-repeat;
         background-position: 6px;
+    }
+    header.active .menuIcon{
+        background: #fff url('./../img/multiplication.png');
+        background-repeat: no-repeat;
+        background-position: 6px;
+    }
+}
+
+@media(max-width: 760px){
+    
+    .container{
+        padding: 20px;
     }
 }
