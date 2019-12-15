@@ -21,8 +21,9 @@ function nextSlide(forward_backward){
 
 function menuToggle(){
     const nav = document.querySelector('#navbar');
-    nav.classList.toggle('active')
-
+    document.querySelector("#nav_ul").style.transition = "ease-in-out 2s";
+    nav.classList.toggle('active');
+    
 }
 
 
